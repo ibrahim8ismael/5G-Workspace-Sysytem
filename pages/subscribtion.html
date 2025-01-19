@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribed Clients</title>
+</head>
+<body class="bg-white dark:bg-gray-900">
+    
+    <div class="subscribedClients">
+        <div id="main" class="relative bg-gray-50 dark:bg-gray-900 group is-open">
+            <div class="lg:hidden block fixed bg-black/70 w-full h-full z-10 opacity-0 invisible group-[.backdrop]:opacity-100 group-[.backdrop]:visible transition-all duration-500 ease-in-out">hellllllllooooooo</div>  
+            <aside id="sidemenu" class="group min-h-screen max-sm:w-full flex flex-col flex-shrink-0 w-64 lg:group-[.is-open]:w-64 lg:group-[.is-open]:translate-x-0 group-[.is-open]:-translate-x-full  lg:translate-x-0 absolute left-0 lg:fixed z-10 lg:w-16 transition-all duration-500 ease-in-out  border-r border-gray-200 dark:border-gray-900 bg-gray-100 dark:bg-gray-800">
+                <!--Sidebar Header-->
+                <div class="flex items-center justify-between flex-shrink-0 gap-4 mx-4 px-0 py-6 border-b border-gray-200 dark:border-gray-800 group-[.is-open]:flex-row">
+                    <a href="home.html" class="flex items-center">
+                        <!-- Logo -->
+                        <svg class="dark:text-white duration-300 ease-in-out fill-current group-[.is-open]:h-12 group-[.is-open]:w-12 h-8 text-gray-900 transition-all w-8"viewBox="0 0 1417.32 1417.32"xmlns=http://www.w3.org/2000/svg><g id=surface1><path d="M 610.476563 811.042969 C 610.476563 865.226563 654.398438 909.148438 708.582031 909.148438 C 762.761719 909.148438 806.6875 865.226563 806.6875 811.042969 C 806.6875 756.863281 762.761719 712.941406 708.582031 712.941406 C 654.398438 712.941406 610.476563 756.863281 610.476563 811.042969"style=stroke:none;fill-rule:nonzero /><path d="M 950.621094 649.136719 C 950.621094 649.136719 730.148438 373.542969 466.539063 644.34375 L 579.472656 725.820313 C 579.472656 725.820313 702.589844 585.628906 834.394531 725.820313 Z M 950.621094 649.136719"style=stroke:none;fill-rule:nonzero /><path d="M 907.484375 144.683594 C 907.484375 144.683594 624.707031 72.789063 437.78125 175.835938 L 303.582031 525.21875 L 417.414063 613.1875 C 417.414063 613.1875 698.996094 272.894531 1000.949219 613.1875 L 1113.582031 532.90625 C 1113.582031 532.90625 963.800781 238.144531 515.667969 351.976563 L 546.820313 277.6875 C 546.820313 277.6875 721.761719 238.144531 851.167969 281.28125 Z M 907.484375 144.683594"style=stroke:none;fill-rule:nonzero /><path d="M 1201.457031 749.785156 L 1200.640625 749.785156 L 1200.640625 749.761719 L 832.1875 749.761719 C 832.1875 749.761719 866.019531 812.085938 832.1875 886.382813 L 1074.101563 886.382813 L 1073.914063 890.882813 C 1035.023438 1056.648438 886.042969 1180.488281 708.582031 1180.488281 C 501.628906 1180.488281 333.257813 1012.121094 333.257813 805.167969 C 333.257813 786.351563 334.6875 767.867188 337.375 749.785156 L 215.707031 749.785156 C 213.675781 767.980469 212.535156 786.4375 212.535156 805.167969 C 212.535156 1078.683594 435.0625 1301.210938 708.582031 1301.210938 C 952.859375 1301.210938 1156.316406 1123.667969 1197.058594 890.882813 L 1197.195313 890.882813 L 1197.195313 890.125 C 1201.984375 862.5 1204.625 834.144531 1204.625 805.167969 C 1204.625 786.4375 1203.484375 767.980469 1201.457031 749.785156"style=stroke:none;fill-rule:nonzero /></g></svg>
+                        <!-- Sidebar Text -->
+                        <span id="workspace-text" class="ml-2 text-gray-900 dark:text-white text-lg font-bold opacity-0 invisible transition-opacity duration-300 ease-in-out group-[.is-open]:opacity-100 group-[.is-open]:visible">
+                            5G-Workspace
+                        </span>
+                    </a>
+                    
+                    <!-- Toggle Button -->
+                    <button id="navbar-toggle" class="absolute right-3 lg:-right-3 w-8 h-8 rounded-full flex items-center justify-center bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 transition-all duration-300">
+                        <svg class="duration-500 ease-in-out group-[.is-open]:rotate-0 rotate-180 transition-transform"fill=none height=16 viewBox="0 0 16 16"width=16 xmlns=http://www.w3.org/2000/svg><path d="M10.0002 11.9999L6 7.99971L10.0025 3.99719"stroke=#111827 stroke-linecap=round stroke-linejoin=round stroke-width=1.6></path></svg>
+                    </button>
+                </div>
+                    
+                <!--Sidebar Links-->
+                <nav class="flex-1 overflow-hidden overflow-y-auto pt-6 mx-3 group-[.is-open]:mx-3">
+                    <h5 class="py-2 pl-1 text-xs font-medium text-gray-400 uppercase" >MENU</h5>
+                    <ul class=" overflow-hidden flex flex-col gap-1.5">
+        
+                        <!-- Home -->
+                        <li>
+                            <a href="home.html" class="whitespace-nowrap flex items-center gap-3 text-gray-600 dark:text-gray-400 text-sm font-medium py-2  px-2 group-[.is-open]:px-2 group-[.is-open]:justify-start dark:justify-start rounded-lg transition-all duration-300 hover:bg-white active:bg-white hover:text-black">
+                              <span><i class="fa-solid fa-house fa-lg"></i></span>
+                              <span class="lg:opacity-0 group-[.is-open]:opacity-100 transition-all duration-100 ease-in-out">Dashboard</span>
+                            </a>
+                        </li>
+        
+                        <!-- Subscribed Users Section -->
+                        <li>
+                            <a href="subscribtion.html" class="flex items-center gap-3 text-black dark:text-white text-sm font-medium py-2  px-2 group-[.is-open]:px-2 group-[.is-open]:justify-start justify-start rounded-lg dark:bg-gray-700 bg-white whitespace-nowrap"  >
+                                <span><i class="fa-regular fa-handshake fa-lg"></i></span>
+                                <span class="lg:opacity-0 group-[.is-open]:opacity-100 transition-all duration-500 ease-in-out">Subscribed Users</span>
+                            </a>
+                        </li>
+        
+        
+                        <!-- Manage Clients Section -->
+                        <li>
+                            <a href="" class="whitespace-nowrap flex items-center gap-3 text-gray-600 dark:text-gray-400 text-sm font-medium py-2  px-2 group-[.is-open]:px-2 group-[.is-open]:justify-start dark:justify-start rounded-lg transition-all duration-300 hover:bg-white active:bg-white hover:text-black"  >
+                                <span><i class="fa-solid fa-server fa-lg"></i></span>
+                                <span class="lg:opacity-0 group-[.is-open]:opacity-100 transition-all duration-500 ease-in-out">Manage Clients</span>
+                            </a>
+                        </li>
+        
+                        <!-- Calender Section -->
+                        <li>
+                            <a href="" class="whitespace-nowrap flex items-center gap-3 text-gray-600 dark:text-gray-400 text-sm font-medium py-2  px-2 group-[.is-open]:px-2 group-[.is-open]:justify-start dark:justify-start rounded-lg transition-all duration-300 hover:bg-white active:bg-white hover:text-black"  >
+                              <span><i class="fa-solid fa-calendar-days fa-lg"></i></span>
+                              <span class="lg:opacity-0 group-[.is-open]:opacity-100 transition-all duration-500 ease-in-out">Calendar</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+        
+        
+        
+                <!--Sidebar Footer-->
+                <div class="flex-shrink-0 mx-3 group-[.is-open]:mx-3">
+                    <h5 class="py-1.5 pl-1  text-xs font-medium text-gray-400 dark:text-gray-400 uppercase" >USER</h5>
+                        <ul class="overflow-hidden flex flex-col gap-2 pb-6">
+        
+                            <!-- Add Client Section -->
+                            <li>
+                                <a href="" class="whitespace-nowrap flex items-center gap-3 text-gray-600 dark:text-gray-400 text-sm font-medium py-2  px-2 group-[.is-open]:px-2 group-[.is-open]:justify-start dark:justify-start rounded-lg transition-all duration-300 hover:bg-white active:bg-white hover:text-black"  >
+                                    <span><i class="fa-solid fa-user-plus fa-lg"></i></span>
+                                    <span class="lg:opacity-0 group-[.is-open]:opacity-100 transition-all duration-500 ease-in-out">Add New Client</span>
+                                </a>
+                            </li>
+        
+                             <!-- Kitchen Section -->
+                             <li>
+                                <a href="" class="whitespace-nowrap flex items-center gap-3 text-gray-600 dark:text-gray-400 text-sm font-medium py-2  px-2 group-[.is-open]:px-2 group-[.is-open]:justify-start dark:justify-start rounded-lg transition-all duration-300 hover:bg-white active:bg-white hover:text-black"  >
+                                    <span><i class="fa-solid fa-kitchen-set fa-lg"></i></span>
+                                    <span class="lg:opacity-0 group-[.is-open]:opacity-100 transition-all duration-500 ease-in-out">Kitchen</span>
+                                </a>
+                            </li>
+        
+                            <!-- Leaves Section -->
+                            <li>
+                                <a href="" class="whitespace-nowrap flex items-center gap-3 text-gray-600 dark:text-gray-400 text-sm font-medium py-2  px-2 group-[.is-open]:px-2 group-[.is-open]:justify-start dark:justify-start rounded-lg transition-all duration-300 hover:bg-white active:bg-white hover:text-black"  >
+                                    <span><i class="fa-solid fa-right-from-bracket fa-lg"></i></span>
+                                    <span class="lg:opacity-0 group-[.is-open]:opacity-100 transition-all duration-500 ease-in-out">Leaves</span>
+                                </a>
+                            </li>
+        
+                            <!-- DarkMood -->
+                            <li>
+                                <a href="" id="dark-mode-toggle" class="whitespace-nowrap flex items-center gap-3 text-gray-600 dark:text-gray-400 text-sm font-medium py-2  px-2 group-[.is-open]:px-2 group-[.is-open]:justify-start dark:justify-start rounded-lg transition-all duration-300 hover:bg-white active:bg-white hover:text-black"  >
+                                    <span><i id="dark-mode-icon" class="fa-solid fa-moon"></i></span>
+                                    <span id="dark-mode-text" class="lg:opacity-0 group-[.is-open]:opacity-100 transition-all duration-500 ease-in-out">DarkMood</span>
+                                </a>
+                            </li>
+        
+                            <!-- Logout -->
+                            <li>
+                                <a href="../index.html" class="whitespace-nowrap flex items-center gap-3 text-gray-500 dark:text-gray-400 text-sm font-medium py-2 px-2 group-[.is-open]:px-2 group-[.is-open]:justify-start dark:justify-start rounded-lg transition-all duration-200 hover:bg-red-100 hover:text-red-600 active:bg-red-200 stroke-gray-500 dark:stroke-gray-400 hover:stroke-red-600">
+                                    <span><i class="fa-solid fa-power-off fa-lg"></i></span>
+                                    <span class="lg:opacity-0 group-[.is-open]:opacity-100 transition-all duration-300 ease-in-out">Logout</span>
+                                </a>
+                            </li>
+                        </ul>
+        
+        
+                        <div class="py-5  flex justify-between items-center border-t border-solid border-gray-200 dark:border-gray-800">
+                          <div class="flex items-center gap-2.5" >
+                            <div class="w-10 h-10 rounded-full flex items-center justify-center bg-purple-100">
+                                <i class="fa-solid fa-1 fa-lg"></i>
+        
+                                <!-- Logos for the id
+                                <i class="fa-solid fa-2 fa-lg"></i> 2
+                                <i class="fa-solid fa-3 fa-lg"></i> 3
+                                <i class="fa-solid fa-4 fa-lg"></i> 4
+                                <i class="fa-solid fa-5 fa-lg"></i> 5
+                                <i class="fa-solid fa-6 fa-lg"></i> 6
+                                <i class="fa-solid fa-7 fa-lg"></i> 7
+                                <i class="fa-solid fa-8 fa-lg"></i> 8
+                                <i class="fa-solid fa-9 fa-lg"></i> 9
+                                 -->
+                            </div>
+                            <div class="lg:opacity-0 group-[.is-open]:opacity-100 transition-all duration-500 ease-in-out" >
+                              <p class="font-semibold text-xs text-gray-900 dark:text-white mb-0.5 whitespace-nowrap">
+                                Ibrahim
+                              </p>
+                              <p class="font-medium text-xs text-gray-500 dark:text-gray-400 whitespace-nowrap">ibrahim@5g.com</p>
+                            </div>
+                          </div>
+                        </div>
+                <!-- End side Footer  -->
+                </div>  
+            <!-- End of all Siiiide !!!!!! -->
+            </aside> 
+                  
+                  
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+            <!--main content-->      
+            <div id="main-body" class=" h-full overflow-y-auto  xl:ml-auto relative transition-all duration-500 w-full lg:pl-16 group-[.is-open]:lg:pl-64 ml-auto ">   
+                <!-- Mobile view -->
+                <div class="flex lg:hidden items-center justify-start gap-3 pb-8">
+                    <!-- button for mobile view -->
+                    <button id="toggleSidebarmobile" class="w-6 h-6 m-4 bg-inherit rounded-sm flex lg:hidden items-center justify-center bg-gray-100 dark:bg-white"><i class="fa-solid fa-bars fa-lg"></i></button>
+                    <!-- logo and text for mobile -->
+                    <svg class="dark:text-white duration-300 ease-in-out fill-current group-[.is-open]:h-12 group-[.is-open]:w-12 h-8 text-gray-900 transition-all w-8"viewBox="0 0 1417.32 1417.32"xmlns=http://www.w3.org/2000/svg><g id=surface1><path d="M 610.476563 811.042969 C 610.476563 865.226563 654.398438 909.148438 708.582031 909.148438 C 762.761719 909.148438 806.6875 865.226563 806.6875 811.042969 C 806.6875 756.863281 762.761719 712.941406 708.582031 712.941406 C 654.398438 712.941406 610.476563 756.863281 610.476563 811.042969"style=stroke:none;fill-rule:nonzero /><path d="M 950.621094 649.136719 C 950.621094 649.136719 730.148438 373.542969 466.539063 644.34375 L 579.472656 725.820313 C 579.472656 725.820313 702.589844 585.628906 834.394531 725.820313 Z M 950.621094 649.136719"style=stroke:none;fill-rule:nonzero /><path d="M 907.484375 144.683594 C 907.484375 144.683594 624.707031 72.789063 437.78125 175.835938 L 303.582031 525.21875 L 417.414063 613.1875 C 417.414063 613.1875 698.996094 272.894531 1000.949219 613.1875 L 1113.582031 532.90625 C 1113.582031 532.90625 963.800781 238.144531 515.667969 351.976563 L 546.820313 277.6875 C 546.820313 277.6875 721.761719 238.144531 851.167969 281.28125 Z M 907.484375 144.683594"style=stroke:none;fill-rule:nonzero /><path d="M 1201.457031 749.785156 L 1200.640625 749.785156 L 1200.640625 749.761719 L 832.1875 749.761719 C 832.1875 749.761719 866.019531 812.085938 832.1875 886.382813 L 1074.101563 886.382813 L 1073.914063 890.882813 C 1035.023438 1056.648438 886.042969 1180.488281 708.582031 1180.488281 C 501.628906 1180.488281 333.257813 1012.121094 333.257813 805.167969 C 333.257813 786.351563 334.6875 767.867188 337.375 749.785156 L 215.707031 749.785156 C 213.675781 767.980469 212.535156 786.4375 212.535156 805.167969 C 212.535156 1078.683594 435.0625 1301.210938 708.582031 1301.210938 C 952.859375 1301.210938 1156.316406 1123.667969 1197.058594 890.882813 L 1197.195313 890.882813 L 1197.195313 890.125 C 1201.984375 862.5 1204.625 834.144531 1204.625 805.167969 C 1204.625 786.4375 1203.484375 767.980469 1201.457031 749.785156"style=stroke:none;fill-rule:nonzero /></g></svg>
+                    <span id="workspace-text" class="ml-2 text-gray-900 dark:text-white text-lg font-bold opacity-0 invisible transition-opacity duration-300 ease-in-out group-[.is-open]:opacity-100 group-[.is-open]:visible">5G-Workspace</span>
+                </div>
+        
+                
+                <!-- Content Hereeeeeeeee -->
+                <div class="w-full px-2 bg-white dark:bg-gray-900">
+                    <section class="bg-white antialiased dark:bg-gray-900">
+                        <div class="mx-auto max-w-screen-xl px-4 2xl:px-0">
+                          <div class="mx-auto max-w-7xl">
+        
+                            <div class="mt-12 mx-auto max-w-5xl flex justify-between">
+                                <button type="button" class="w-full rounded-lg ml-6 bg-primary-700 px-3 py-2 text-sm font-medium text-white hover:bg-blue-900 duration-200 focus:outline-none focus:ring-4 bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-700 lg:w-auto">Assign Subscribed Client</button>
+                                <button type="button" class="w-full rounded-lg ml-6 bg-primary-700 px-3 py-2 text-sm border-2 border-yellow-300 font-medium duration-200 hover:bg-yellow-300 text-black  dark:text-yellow-400 dark:hover:text-black lg:w-auto">Add previous Subscribed Client</button>
+                                <button type="button" class="w-full rounded-lg border border-red-700 px-3 py-2 text-center text-sm font-medium duration-300 text-red-700 hover:bg-red-700 hover:text-white focus:outline-none focus:ring-4 focus:ring-red-300 dark:border-red-500 dark:text-red-500 dark:hover:bg-red-600 dark:hover:text-white dark:focus:ring-red-900 lg:w-auto">Info Subscribed Clients</button>
+                            </div>
+        
+                            <div class="space-y-6 sm:mt-8 sm:space-y-8">
+                                
+                                <!-- Main Content -->
+                                <div class="divide-y divide-gray-200 overflow-hidden rounded-lg bg-white shadow-sm dark:divide-gray-700 dark:bg-gray-900">
+                                     <div class="relative overflow-x-auto">
+                                        <table class="w-full divide-y divide-gray-200 text-left text-sm text-gray-900 dark:divide-gray-700 dark:text-white">
+        
+                                            <thead class="bg-gray-50 text-xs uppercase text-gray-700 dark:bg-gray-700 dark:text-gray-400">
+                                                <tr>
+                                                    <th scope="col" class="whitespace-nowrap p-4 text-xs font-semibold uppercase text-gray-500 dark:text-gray-400">Client ID:</th>
+                                                    <th scope="col" class="whitespace-nowrap p-4 text-xs font-semibold uppercase text-gray-500 dark:text-gray-400">Client Name:</th>
+                                                    <th scope="col" class="whitespace-nowrap p-4 text-xs font-semibold uppercase text-gray-500 dark:text-gray-400">Start At:</th>
+                                                    <th scope="col" class="whitespace-nowrap p-4 text-xs font-semibold uppercase text-gray-500 dark:text-gray-400">End At:</th>
+                                                    <th scope="col" class="p-4 text-xs font-semibold uppercase">Days Left</th>
+                                                    <th scope="col" class="whitespace-nowrap p-4 text-xs font-semibold uppercase text-center text-gray-500 dark:text-gray-400">Actions:</th>
+                                                </tr>
+                                            </thead>
+                      
+                                            <tbody class="divide-y divide-gray-200 dark:divide-gray-700">
+        
+                                        <!-- First row -->
+                                        <tr class="hover:bg-gray-50 dark:hover:bg-gray-700">
+                                            <th scope="row" class="whitespace-nowrap p-4 font-bold text-gray-900 dark:text-white">ID: 911</th>
+                                            <td class="whitespace-nowrap p-4 text-sm font-bold">Ibrahim Ismael Fouad Ismael</td>
+                                            <td class="whitespace-nowrap p-4 text-sm font-medium">2025/2/4</td>
+                                            <td class="whitespace-nowrap p-4 text-sm font-medium">2025/3/4</td>
+                                            <td class="p-4"><span class="me-2 inline-flex items-center rounded bg-yellow-100 px-2.5 py-0.5 text-xs font-medium text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300">5-Days Left</span></td>
+                                            <td class="p-4 text-right">
+                                            <div class="relative right-16">
+                                                <button type="button" class="w-full rounded-lg border border-red-700 px-3 py-2 text-center text-sm font-medium text-red-700 hover:bg-red-700 hover:text-white focus:outline-none focus:ring-4 focus:ring-red-300 dark:border-red-500 dark:text-red-500 dark:hover:bg-red-600 dark:hover:text-white dark:focus:ring-red-900 lg:w-auto">Cancel Reservation</button>
+                                                <button type="button" class="w-full rounded-lg ml-6 bg-primary-700 px-3 py-2 text-sm font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-4 bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-700 lg:w-auto">Renew Subscribtion</button>
+                                            </div>
+                                        </tr>
+        
+        
+                                        <!-- Sec row -->
+                                        <tr class="hover:bg-gray-50 dark:hover:bg-gray-700">
+                                            <th scope="row" class="whitespace-nowrap p-4 font-bold text-gray-900 dark:text-white">ID: 912</th>
+                                            <td class="whitespace-nowrap p-4 text-sm font-bold">Ibrahim Ismael Fouad Ismael</td>
+                                            <td class="whitespace-nowrap p-4 text-sm font-medium">2025/2/4</td>
+                                            <td class="whitespace-nowrap p-4 text-sm font-medium">2025/3/4</td>
+                                            <td class="p-4"><span class="me-2 inline-flex items-center rounded bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-800 dark:bg-green-900 dark:text-green-300">28-Days Left</span></td>
+                                            <td class="p-4 text-right">
+                                            <div class="relative right-16">
+                                                <button type="button" class="w-full rounded-lg border border-red-700 px-3 py-2 text-center text-sm font-medium text-red-700 hover:bg-red-700 hover:text-white focus:outline-none focus:ring-4 focus:ring-red-300 dark:border-red-500 dark:text-red-500 dark:hover:bg-red-600 dark:hover:text-white dark:focus:ring-red-900 lg:w-auto">Cancel Reservation</button>
+                                                <button type="button" class="w-full rounded-lg ml-6 bg-primary-700 px-3 py-2 text-sm font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-4 bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-700 lg:w-auto">Renew Subscribtion</button>
+                                            </div>
+                                        </tr>
+        
+        
+                                        <!-- 3rd row -->
+                                        <tr class="hover:bg-gray-50 dark:hover:bg-gray-700">
+                                            <th scope="row" class="whitespace-nowrap p-4 font-bold text-gray-900 dark:text-white">ID: 912</th>
+                                            <td class="whitespace-nowrap p-4 text-sm font-bold">Ibrahim Ismael Fouad Ismael</td>
+                                            <td class="whitespace-nowrap p-4 text-sm font-medium">2025/2/4</td>
+                                            <td class="whitespace-nowrap p-4 text-sm font-medium">2025/3/4</td>
+                                            <td class="p-4"><span class="me-2 inline-flex items-center rounded bg-red-100 px-2.5 py-0.5 text-xs font-medium text-red-800 dark:bg-red-900 dark:text-red-300">2-Days Left</span></td>
+                                            <td class="p-4 text-right">
+                                            <div class="relative right-16">
+                                                <button type="button" class="w-full rounded-lg border border-red-700 px-3 py-2 text-center text-sm font-medium text-red-700 hover:bg-red-700 hover:text-white focus:outline-none focus:ring-4 focus:ring-red-300 dark:border-red-500 dark:text-red-500 dark:hover:bg-red-600 dark:hover:text-white dark:focus:ring-red-900 lg:w-auto">Cancel Reservation</button>
+                                                <button type="button" class="w-full rounded-lg ml-6 bg-primary-700 px-3 py-2 text-sm font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-4 bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-700 lg:w-auto">Renew Subscribtion</button>
+                                            </div>
+                                        </tr>    
+                                            </tbody>
+        
+                                        </table>
+                                    </div>      
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <!-- End Of Main Content Hereeee!!!!!! -->
+        
+            <!-- End Hereeeeee -->
+        </div>
+    </div>
+<script src="sidebar.js"></script>
+</body>
+</html>
