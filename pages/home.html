@@ -182,9 +182,9 @@
                   <div class="mx-auto max-w-7xl">
 
                     <div class="mt-12 mx-auto max-w-5xl flex justify-between">
-                        <button type="button" class="w-full rounded-lg ml-6 bg-primary-700 px-3 py-2 text-sm font-medium text-white hover:bg-blue-900 duration-200 focus:outline-none focus:ring-4 bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-700 lg:w-auto">Start Reservation</button>
-                        <button type="button" class="w-full rounded-lg ml-6 bg-primary-700 px-3 py-2 text-sm border-2 border-yellow-300 font-medium duration-200 hover:bg-yellow-300 text-black  dark:text-yellow-400 dark:hover:text-black lg:w-auto">Add previous Reservation</button>
-                        <button type="button" class="w-full rounded-lg border border-red-700 px-3 py-2 text-center text-sm font-medium duration-300 text-red-700 hover:bg-red-700 hover:text-white focus:outline-none focus:ring-4 focus:ring-red-300 dark:border-red-500 dark:text-red-500 dark:hover:bg-red-600 dark:hover:text-white dark:focus:ring-red-900 lg:w-auto">Info Clients</button>
+                        <button onclick="StartReservation()" type="button" class="w-full rounded-lg ml-6 bg-primary-700 px-3 py-2 text-sm font-medium text-white hover:bg-blue-900 duration-200 focus:outline-none focus:ring-4 bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-700 lg:w-auto">Start Reservation</button>
+                        <button onclick="StartPrevReservation()" type="button" class="w-full rounded-lg ml-6 bg-primary-700 px-3 py-2 text-sm border-2 border-yellow-300 font-medium duration-200 hover:bg-yellow-300 text-black  dark:text-yellow-400 dark:hover:text-black lg:w-auto">Add previous Reservation</button>
+                        <button onclick="Info()" type="button" class="w-full rounded-lg border border-red-700 px-3 py-2 text-center text-sm font-medium duration-300 text-red-700 hover:bg-red-700 hover:text-white focus:outline-none focus:ring-4 focus:ring-red-300 dark:border-red-500 dark:text-red-500 dark:hover:bg-red-600 dark:hover:text-white dark:focus:ring-red-900 lg:w-auto">Info Clients</button>
                     </div>
 
                     <div class="space-y-6 sm:mt-8 sm:space-y-8">
@@ -214,7 +214,7 @@
                                     <td class="p-4"><span class="me-2 inline-flex items-center rounded bg-yellow-100 px-2.5 py-0.5 text-xs font-medium text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300">Subscribed Client</span></td>
                                     <td class="p-4 text-right">
                                         <button onclick="DeleteAlert()" type="button" class="w-full rounded-lg border border-red-700 px-3 py-2 text-center text-sm font-medium text-red-700 hover:bg-red-700 hover:text-white focus:outline-none focus:ring-4 focus:ring-red-300 dark:border-red-500 dark:text-red-500 dark:hover:bg-red-600 dark:hover:text-white dark:focus:ring-red-900 lg:w-auto">Cancel Reservation</button>
-                                        <button type="button" class="w-full rounded-lg ml-6 bg-primary-700 px-3 py-2 text-sm border-2 border-yellow-300 font-medium duration-200 hover:bg-yellow-300 text-black  dark:text-yellow-400 dark:hover:text-black lg:w-auto">Kitchen</button>
+                                        <button onclick="KitchenSelection()" type="button" class="w-full rounded-lg ml-6 bg-primary-700 px-3 py-2 text-sm border-2 border-yellow-300 font-medium duration-200 hover:bg-yellow-300 text-black  dark:text-yellow-400 dark:hover:text-black lg:w-auto">Kitchen</button>
                                         <button onclick="CheckoutAlert()" type="button" class="w-full rounded-lg ml-6 bg-primary-700 px-3 py-2 text-sm font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-4 bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-700 lg:w-auto">Check Out</button>
                                     </td>
                                 </tr>
@@ -228,8 +228,8 @@
                                     <td class="p-4"><span class="me-2 inline-flex items-center rounded bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-800 dark:bg-green-900 dark:text-green-300">Subscribed Client</span></td>
                                     <td class="p-4 text-right">
                                         <button onclick="DeleteAlert()" type="button" class="w-full rounded-lg border border-red-700 px-3 py-2 text-center text-sm font-medium text-red-700 hover:bg-red-700 hover:text-white focus:outline-none focus:ring-4 focus:ring-red-300 dark:border-red-500 dark:text-red-500 dark:hover:bg-red-600 dark:hover:text-white dark:focus:ring-red-900 lg:w-auto">Cancel Reservation</button>
-                                        <button type="button" class="w-full rounded-lg ml-6 bg-primary-700 px-3 py-2 text-sm border-2 border-yellow-300 font-medium duration-200 hover:bg-yellow-300 text-black  dark:text-yellow-400 dark:hover:text-black lg:w-auto">Kitchen</button>
-                                        <button type="button" class="w-full rounded-lg ml-6 bg-primary-700 px-3 py-2 text-sm font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-4 bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-700 lg:w-auto">Check Out</button>
+                                        <button onclick="KitchenSelection()" type="button" class="w-full rounded-lg ml-6 bg-primary-700 px-3 py-2 text-sm border-2 border-yellow-300 font-medium duration-200 hover:bg-yellow-300 text-black  dark:text-yellow-400 dark:hover:text-black lg:w-auto">Kitchen</button>
+                                        <button onclick="CheckoutAlert()" type="button" class="w-full rounded-lg ml-6 bg-primary-700 px-3 py-2 text-sm font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-4 bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-700 lg:w-auto">Check Out</button>
                                     </td>
                                 </tr>
 
@@ -242,8 +242,8 @@
                                     <td class="p-4"><span class="me-2 w-32 inline-flex items-center rounded bg-blue-100 px-2.5 py-0.5 text-xs font-medium text-blue-800 dark:bg-blue-900 dark:text-blue-300">Daily Client</span></td>
                                     <td class="p-4 text-right">
                                         <button onclick="DeleteAlert()" type="button" class="w-full rounded-lg border border-red-700 px-3 py-2 text-center text-sm font-medium text-red-700 hover:bg-red-700 hover:text-white focus:outline-none focus:ring-4 focus:ring-red-300 dark:border-red-500 dark:text-red-500 dark:hover:bg-red-600 dark:hover:text-white dark:focus:ring-red-900 lg:w-auto">Cancel Reservation</button>
-                                        <button type="button" class="w-full rounded-lg ml-6 bg-primary-700 px-3 py-2 text-sm border-2 border-yellow-300 font-medium duration-200 hover:bg-yellow-300 text-black  dark:text-yellow-400 dark:hover:text-black lg:w-auto">Kitchen</button>
-                                        <button type="button" class="w-full rounded-lg ml-6 bg-primary-700 px-3 py-2 text-sm font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-4 bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-700 lg:w-auto">Check Out</button>
+                                        <button onclick="KitchenSelection()" type="button" class="w-full rounded-lg ml-6 bg-primary-700 px-3 py-2 text-sm border-2 border-yellow-300 font-medium duration-200 hover:bg-yellow-300 text-black  dark:text-yellow-400 dark:hover:text-black lg:w-auto">Kitchen</button>
+                                        <button onclick="CheckoutAlert()" type="button" class="w-full rounded-lg ml-6 bg-primary-700 px-3 py-2 text-sm font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-4 bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-700 lg:w-auto">Check Out</button>
                                     </td>
                                 </tr>    
                                     </tbody>

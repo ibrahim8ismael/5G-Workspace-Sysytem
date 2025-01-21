@@ -173,3 +173,270 @@ function EditClient(){
         buttonsStyling: false
       });
 }
+
+
+// Start Reservation in home
+function StartReservation(){
+    Swal.fire({
+        title: '<h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100">Start time</h3>',
+            html: `
+            <form class="max-w-sm mx-auto">
+                <div class="mb-5">
+                    
+                    <input type="text" id="clientName" class="mb-5 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none" placeholder="Name">
+
+                    <select class="mb-5 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none">
+                        <option value="" disabled selected>Select Name</option>
+                        <option value="mobile">ibrahim</option>
+                        <option value="home">mohamed</option>
+                        <option value="work">hamza</option>
+                    </select>
+
+                    <select class="mb-5 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none">
+                        <option value="" disabled selected>Select Room</option>
+                        <option value="mobile">Hall</option>
+                        <option value="home">Shared Space</option>
+                        <option value="work">Meeting Room</option>
+                    </select>
+                </div>
+            </form>
+            `,
+        showCancelButton: true,
+        confirmButtonText: "Start Now",
+        cancelButtonText: "Cancel",
+        customClass: {
+          popup: "bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 rounded-lg shadow-lg",
+          title: "text-xl font-bold",
+          content: "text-sm",
+          confirmButton: "bg-blue-600 mr-2 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded",
+          cancelButton: "bg-red-600 hover:bg-red-700 text-white font-medium py-2 px-4 rounded focus:outline-none focus:ring focus:ring-red-300 dark:focus:ring-red-800"
+        },
+        buttonsStyling: false
+      });
+}
+
+
+// Start Reservation in home
+function StartPrevReservation(){
+    Swal.fire({
+        title: '<h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100">Start time</h3>',
+            html: `
+            <form class="max-w-sm mx-auto">
+        <div class="mb-5">
+        <!-- Name Input -->
+        <input type="text" id="clientName" class="mb-5 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none" placeholder="Name">
+
+        <!-- Select Name -->
+        <select class="mb-5 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none">
+            <option value="" disabled selected>Select Name</option>
+            <option value="ibrahim">Ibrahim</option>
+            <option value="mohamed">Mohamed</option>
+            <option value="hamza">Hamza</option>
+        </select>
+
+        <!-- Select Room -->
+        <select class="mb-5 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none">
+            <option value="" disabled selected>Select Room</option>
+            <option value="hall">Hall</option>
+            <option value="shared-space">Shared Space</option>
+            <option value="meeting-room">Meeting Room</option>
+        </select>
+
+        <!-- Time and Day Selection in One Row -->
+        <div class="flex space-x-4">
+            <!-- Time Input -->
+            <input type="time" id="time" class="flex-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none">
+
+            
+        </div>
+    </div>
+</form>
+            `,
+        showCancelButton: true,
+        confirmButtonText: "Start Now",
+        cancelButtonText: "Cancel",
+        customClass: {
+          popup: "bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 rounded-lg shadow-lg",
+          title: "text-xl font-bold",
+          content: "text-sm",
+          confirmButton: "bg-blue-600 mr-2 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded",
+          cancelButton: "bg-red-600 hover:bg-red-700 text-white font-medium py-2 px-4 rounded focus:outline-none focus:ring focus:ring-red-300 dark:focus:ring-red-800"
+        },
+        buttonsStyling: false
+      });
+}
+
+
+
+
+
+
+// InfoCliens in home 
+function Info(){
+    Swal.fire({
+        title: '<h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100">Start time</h3>',
+            html: `
+            <form class="max-w-sm mx-auto">
+                <div class="mb-5">
+                    <input type="number" id="clientName" class="mb-5 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none" placeholder="Start">
+                    <input type="number" id="clientName" class="mb-5 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none" placeholder="End">    
+                </div>
+            </form>
+            `,
+        showCancelButton: true,
+        confirmButtonText: "Print",
+        cancelButtonText: "Cancel",
+        customClass: {
+          popup: "bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 rounded-lg shadow-lg",
+          title: "text-xl font-bold",
+          content: "text-sm",
+          confirmButton: "bg-blue-600 mr-2 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded",
+          cancelButton: "bg-red-600 hover:bg-red-700 text-white font-medium py-2 px-4 rounded focus:outline-none focus:ring focus:ring-red-300 dark:focus:ring-red-800"
+        },
+        buttonsStyling: false
+      });
+}
+
+
+
+
+
+function KitchenSelection(){
+    Swal.fire({
+        title: '<h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100">Kitchen</h3>',
+            html: `
+            <form class="max-w-4xl mx-auto p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md">
+    <!-- Grid Container -->
+    <div class="grid grid-cols-4 gap-4">
+        <!-- Repeat this block for each cell (16 times) -->
+        <div class="flex flex-col space-y-2">
+            <label for="field1" class="text-sm font-medium text-gray-700 dark:text-gray-300">Tea</label>
+            <input type="number" id="field1" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none" placeholder="0">
+        </div>
+        <div class="flex flex-col space-y-2">
+            <label for="field2" class="text-sm font-medium text-gray-700 dark:text-gray-300">Water</label>
+            <input type="number" id="field2" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none" placeholder="0">
+        </div>
+        <div class="flex flex-col space-y-2">
+            <label for="field3" class="text-sm font-medium text-gray-700 dark:text-gray-300">Coffee</label>
+            <input type="number" id="field3" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none" placeholder="0">
+        </div>
+        <div class="flex flex-col space-y-2">
+            <label for="field4" class="text-sm font-medium text-gray-700 dark:text-gray-300">Coffee</label>
+            <input type="number" id="field4" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none" placeholder="0">
+        </div>
+        <!-- Repeat the above block for the remaining 12 cells -->
+        <!-- Example for the remaining cells -->
+        <div class="flex flex-col space-y-2">
+            <label for="field5" class="text-sm font-medium text-gray-700 dark:text-gray-300">Header 5</label>
+            <input type="number" id="field5" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none" placeholder="0">
+        </div>
+        <div class="flex flex-col space-y-2">
+            <label for="field5" class="text-sm font-medium text-gray-700 dark:text-gray-300">Header 5</label>
+            <input type="number" id="field5" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none" placeholder="0">
+        </div>
+        <div class="flex flex-col space-y-2">
+            <label for="field5" class="text-sm font-medium text-gray-700 dark:text-gray-300">Header 5</label>
+            <input type="number" id="field5" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none" placeholder="0">
+        </div>
+        <div class="flex flex-col space-y-2">
+            <label for="field5" class="text-sm font-medium text-gray-700 dark:text-gray-300">Header 5</label>
+            <input type="number" id="field5" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none" placeholder="0">
+        </div>
+        <div class="flex flex-col space-y-2">
+            <label for="field5" class="text-sm font-medium text-gray-700 dark:text-gray-300">Header 5</label>
+            <input type="number" id="field5" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none" placeholder="0">
+        </div>
+        <div class="flex flex-col space-y-2">
+            <label for="field5" class="text-sm font-medium text-gray-700 dark:text-gray-300">Header 5</label>
+            <input type="number" id="field5" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none" placeholder="0">
+        </div>
+        <div class="flex flex-col space-y-2">
+            <label for="field5" class="text-sm font-medium text-gray-700 dark:text-gray-300">Header 5</label>
+            <input type="number" id="field5" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none" placeholder="0">
+        </div>
+        <div class="flex flex-col space-y-2">
+            <label for="field5" class="text-sm font-medium text-gray-700 dark:text-gray-300">Header 5</label>
+            <input type="number" id="field5" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none" placeholder="0">
+        </div>
+        <div class="flex flex-col space-y-2">
+            <label for="field5" class="text-sm font-medium text-gray-700 dark:text-gray-300">Header 5</label>
+            <input type="number" id="field5" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none" placeholder="0">
+        </div>
+        <div class="flex flex-col space-y-2">
+            <label for="field5" class="text-sm font-medium text-gray-700 dark:text-gray-300">Header 5</label>
+            <input type="number" id="field5" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none" placeholder="0">
+        </div>
+        <div class="flex flex-col space-y-2">
+            <label for="field5" class="text-sm font-medium text-gray-700 dark:text-gray-300">Header 5</label>
+            <input type="number" id="field5" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none" placeholder="0">
+        </div>
+        <div class="flex flex-col space-y-2">
+            <label for="field5" class="text-sm font-medium text-gray-700 dark:text-gray-300">Header 5</label>
+            <input type="number" id="field5" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none" placeholder="0">
+        </div>
+        <div class="flex flex-col space-y-2">
+            <label for="field5" class="text-sm font-medium text-gray-700 dark:text-gray-300">Header 5</label>
+            <input type="number" id="field5" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none" placeholder="0">
+        </div>
+        <div class="flex flex-col space-y-2">
+            <label for="field5" class="text-sm font-medium text-gray-700 dark:text-gray-300">Header 5</label>
+            <input type="number" id="field5" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none" placeholder="0">
+        </div>
+        <div class="flex flex-col space-y-2">
+            <label for="field5" class="text-sm font-medium text-gray-700 dark:text-gray-300">Header 5</label>
+            <input type="number" id="field5" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none" placeholder="0">
+        </div>
+        <div class="flex flex-col space-y-2">
+            <label for="field5" class="text-sm font-medium text-gray-700 dark:text-gray-300">Header 5</label>
+            <input type="number" id="field5" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none" placeholder="0">
+        </div>
+        <div class="flex flex-col space-y-2">
+            <label for="field5" class="text-sm font-medium text-gray-700 dark:text-gray-300">Header 5</label>
+            <input type="number" id="field5" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none" placeholder="0">
+        </div>
+        <div class="flex flex-col space-y-2">
+            <label for="field5" class="text-sm font-medium text-gray-700 dark:text-gray-300">Header 5</label>
+            <input type="number" id="field5" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none" placeholder="0">
+        </div>
+        <div class="flex flex-col space-y-2">
+            <label for="field5" class="text-sm font-medium text-gray-700 dark:text-gray-300">Header 5</label>
+            <input type="number" id="field5" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none" placeholder="0">
+        </div>
+        <div class="flex flex-col space-y-2">
+            <label for="field5" class="text-sm font-medium text-gray-700 dark:text-gray-300">Header 5</label>
+            <input type="number" id="field5" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none" placeholder="0">
+        </div>
+        <div class="flex flex-col space-y-2">
+            <label for="field5" class="text-sm font-medium text-gray-700 dark:text-gray-300">Header 5</label>
+            <input type="number" id="field5" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none" placeholder="0">
+        </div>
+        <div class="flex flex-col space-y-2">
+            <label for="field5" class="text-sm font-medium text-gray-700 dark:text-gray-300">Header 5</label>
+            <input type="number" id="field5" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none" placeholder="0">
+        </div>
+        <div class="flex flex-col space-y-2">
+            <label for="field5" class="text-sm font-medium text-gray-700 dark:text-gray-300">Header 5</label>
+            <input type="number" id="field5" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none" placeholder="0">
+        </div>
+        <div class="flex flex-col space-y-2">
+            <label for="field5" class="text-sm font-medium text-gray-700 dark:text-gray-300">Header 5</label>
+            <input type="number" id="field5" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none" placeholder="0">
+        </div>
+        <!-- Add the remaining cells similarly -->
+    </div>
+</form>
+            `,
+        showCancelButton: true,
+        confirmButtonText: "Add",
+        cancelButtonText: "Cancel",
+        customClass: {
+          popup: "bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 rounded-lg shadow-lg",
+          title: "text-xl font-bold",
+          content: "text-sm",
+          confirmButton: "bg-blue-600 mr-2 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded",
+          cancelButton: "bg-red-600 hover:bg-red-700 text-white font-medium py-2 px-4 rounded focus:outline-none focus:ring focus:ring-red-300 dark:focus:ring-red-800"
+        },
+        buttonsStyling: false
+      });
+}
