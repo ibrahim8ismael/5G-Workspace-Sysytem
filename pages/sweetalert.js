@@ -1,3 +1,4 @@
+// This For Delete Reservition in Current Clients
 function DeleteAlert(){
     Swal.fire({
         title: "Are you sure?",
@@ -30,15 +31,32 @@ function DeleteAlert(){
           });
         }
       });
-      
+}
+
+// This to Show Details in Manage Clients
+function ShowDetails(){
+    Swal.fire({
+        title: '<h3 class="text-lg font-semibold">Client Details<h3/>',
+        html: `
+            <h4 class="mt-2">Phone : 010 102 345 67<h4/>
+            <h4 class="mt-2">Job : React Developer<h4/>
+        `,
+        customClass: {
+            popup: 'bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100', // Tailwind dark mode classes
+            title: 'text-lg font-semibold', // Tailwind classes for title
+            htmlContainer: 'text-left space-y-2', // Tailwind classes for content
+            confirmButton: 'bg-blue-500 hover:bg-blue-600 dark:bg-blue-600 rounded dark:hover:bg-blue-700 text-white w-24 h-10', // Tailwind classes for button
+        },
+        buttonsStyling: false, // Disable SweetAlert2 default button styles
+    });
 }
 
 
 
 
 
-function CheckoutAlert(){
-    
+// This For CheckOut
+function CheckoutAlert(){    
     Swal.fire({
         title: '<h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100">Checkout</h3>',
             html: `
@@ -118,6 +136,32 @@ function CheckoutAlert(){
             `,
         showCancelButton: true,
         confirmButtonText: "Checkout",
+        cancelButtonText: "Cancel",
+        customClass: {
+          popup: "bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 rounded-lg shadow-lg",
+          title: "text-xl font-bold",
+          content: "text-sm",
+          confirmButton: "bg-blue-600 mr-2 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded",
+          cancelButton: "bg-red-600 hover:bg-red-700 text-white font-medium py-2 px-4 rounded focus:outline-none focus:ring focus:ring-red-300 dark:focus:ring-red-800"
+        },
+        buttonsStyling: false
+      });
+}
+
+
+function EditClient(){
+    Swal.fire({
+        title: '<h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100">Edit Client Details</h3>',
+            html: `
+                <form class="max-w-sm mx-auto">
+                <div class="mb-5">
+                    <input type="text" id="clientName" class="mb-5 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none" placeholder="Name">
+                    <input type="Number" id="phoneNumber" class="mb-5 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none" placeholder="Number">
+                    <input type="text" id="clientJob" class="mb-5 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none" placeholder="Job/Faculty">
+                </form>
+            `,
+        showCancelButton: true,
+        confirmButtonText: "Change!!",
         cancelButtonText: "Cancel",
         customClass: {
           popup: "bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 rounded-lg shadow-lg",
